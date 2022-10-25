@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* 
+font-family: 'Aboreto', cursive;
+font-family: 'Poppins', sans-serif;
+*/
+
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    /* Defining margin and padding for entire website */
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position:sticky;
+    font-family: 'Aboreto', cursive;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: black;
+    height:50px;
+    color: white;
+}
+
+nav ul li{
+    padding-left: 10px;
+}
+
+.brand img{
+    height:50px;
+    padding-right: 8px;
+}
+
+/* This is written to bring the text of nav 'Spotify' in centre (height) */
+.brand{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+/* Above is the style for top navigation bar, below will be the style for bottom player */
+
+.container{
+    min-height: 75vh;
+    /* vh means percentage of window. container is 75.3% of height of entire window */
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    background-color: black;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 10px;
+    background-image: url(bg.jpg);
+}
+
+.bottom{
+    position:sticky;
+    height:100px;
+    background-color: black;
+    color: white;
+    bottom:0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin:12px 0px;
+}
+
+.icons i{
+    cursor: pointer;
+    padding:0px 5px;
+}
+
+#myProgressBar{
+    width:80vw;
+}
+
+.songItemContainer{
+    margin-top: 30px;   
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    /* width: 85%;  */
+    color: black;
+    margin: 12px 0;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.songItem img{
+    width: 40px;
+    margin:0 12px;
+    border-radius: 20px;
+}
+
+.timestamp{
+    margin:0 12px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position:absolute;
+    left:10vw;
+}
+
+.songInfo img{
+    opacity:0;
+    transition: opacity 0.5s ease-in;
+}
